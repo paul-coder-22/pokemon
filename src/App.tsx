@@ -1,4 +1,7 @@
 import React from 'react';
+import "./App.css";
+import "./_slick.css";
+import "./_slickTheme.css";
 import {
   PokemonSchema,
   PokemonSpritesSchema,
@@ -6,7 +9,6 @@ import {
 } from './Types/PokemonSchema';
 import {pokemonData} from './Data/pokeData'; 
 import PokeDesk from './Component/PokeDesk/PokeDesk';
-
 export interface AppState {
   searchField:string,
   allPokemons : PokemonSchema[],

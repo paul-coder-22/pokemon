@@ -8,7 +8,7 @@ interface PokeCard {
 
 function Pokecard({handleOnClick,name,spriteUrl}:PokeCard) {
     return (
-        <div onClick={() => handleOnClick(name)} style={{display:"flex"}}>
+        <div onClick={() => handleOnClick(name)}>
             <img src={spriteUrl} alt="pokemon" />
             <p>{name}</p>
         </div>
